@@ -1,0 +1,53 @@
+@import "fonts";
+@import "mixins";
+@import "variables";
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rotonda, sans-serif;
+  font-weight: 400;
+  color: $baseTextColor;
+}
+
+button {
+  @include button-reset();
+}
+
+ul {
+  @include ul-reset();
+}
+
+input {
+  @include input-reset();
+}
+
+.app-button {
+  padding: 17px 110px;
+  background: #7DB945;
+  border-radius: 10px;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #fff;
+  transition: background .2s;
+
+  &:hover {
+    background: #276B62;
+  }
+
+  &:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+
+  @media (max-width: 425px) {
+    width: calc(100% - 20px);
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}

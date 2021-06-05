@@ -1,0 +1,26 @@
+@mixin a-reset {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@mixin ul-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button-reset {
+  background: none;
+  border: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin input-reset {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
